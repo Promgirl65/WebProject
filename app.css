@@ -1,0 +1,112 @@
+/* Gradient Animation */
+@keyframes gradientAnimation {
+    0% {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+    }
+    50% {
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    }
+    100% {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+    }
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    animation: gradientAnimation 10s ease infinite; /* Apply animation */
+    margin: 0;
+  }
+  
+  .quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  #question {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  
+  #options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .option {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .option:hover {
+    background-color: #ddd;
+  }
+  
+  .option.selected {
+    background-color: #2575fc;
+    color: white;
+  }
+  
+  #timer {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #next {
+    background-color: #2575fc;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    margin-top: 20px;
+  }
+  
+  #next:hover {
+    background-color: #1d63b1;
+  }
+  
+  #result {
+    font-size: 30px;
+    color: #ffff;
+    margin-top: 20px;
+  }
+  
+  #restart {
+    background-color: #2575fc;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    margin-top: 20px;
+  }
+  
+  #restart:hover {
+    background-color: #1d63b1;
+  }
+  
